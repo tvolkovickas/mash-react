@@ -1,0 +1,36 @@
+.container {
+  margin: 0 50px;
+  min-height: 500px;
+  border: 1px solid cadetblue;
+}
+
+.header {
+  margin: 25px 0;
+  text-align: center;
+}
+
+.excluded {
+  text-decoration: line-through;
+}
+
+.category {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.option {
+  border: none;
+  border-bottom: 1px solid black;
+  margin: 0 10px;
+  outline: none;
+}
+
+.controls {
+  text-align: center;
+}
+
+.results {
+  display: flex;
+  justify-content: center;
+}
