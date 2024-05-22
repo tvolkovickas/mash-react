@@ -53,7 +53,9 @@ function App() {
 
   useEffect(() => {
     if (useTimer) {
-      const interval = setInterval(() => setCounter(counter + 1), 1000);
+      const interval = setInterval(() => {
+        setCounter(counter + 1);
+      }, 1000);
 
       return () => clearInterval(interval);
     }
@@ -160,7 +162,7 @@ function App() {
           optionCategory={3}
         />
         <div className="controls">
-          <div>Timer: {counter}</div>
+          <div data-testid="timer">Timer: {counter}</div>
           <div>
             {(counter == 0 || useTimer) && (
               <Button
